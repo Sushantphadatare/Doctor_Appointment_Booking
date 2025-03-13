@@ -1,0 +1,52 @@
+
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+
+        <div class="container mt-2">
+            <div class="card shadow-lg p-4 animated fadeIn">
+              <h2 style="background-color: yellow text-center mb-4"><i class="fa fa-calendar-check-o"></i> New Appointment</h2>
+              
+              <form #appointmentForm="ngForm">
+                <div class="mb-3">
+                  <label class="form-label"><i class="fa fa-user"></i> Name</label>
+                  <input type="text" class="form-control" required name="patientName" [(ngModel)]="appointment.patientName">
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="email" class="form-control" required name="email" [(ngModel)]="appointment.email">
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label"><i class="fa fa-phone"></i> Mobile No</label>
+                  <input type="text" class="form-control" required name="mobileno" [(ngModel)]="appointment.mobileno">
+                </div>
+                
+                <div class="mb-3">
+                  <label class="form-label"><i class="fa fa-map-marker"></i> City</label>
+                  <input type="text" class="form-control" required name="city" [(ngModel)]="appointment.city">
+                </div>
+          
+                <div class="mb-3">
+                  <label class="form-label"><i class="fa fa-home"></i> Address</label>
+                  <textarea class="form-control" required name="address" [(ngModel)]="appointment.address"></textarea>
+                </div>
+          
+                <div class="mb-3">
+                  <label class="form-label"><i class="fa fa-calendar"></i> Appointment Date</label>
+                  <input type="date" class="form-control" required name="appointmentDate" [(ngModel)]="appointment.appointmentDate">
+                </div>
+          
+                <button type="submit" class="btn btn-primary w-100">
+                  <i class="fa fa-paper-plane"></i> Submit
+                </button>
+              </form>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-3"></div>
+   
+</div>
+
+  

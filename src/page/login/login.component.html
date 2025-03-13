@@ -1,0 +1,74 @@
+
+<div class="parent">
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="card login-card animate-fade-in">
+            <div class="card-body p-5">
+                <!-- Header -->
+                <div class="text-center mb-4">
+                    <i class="fa-solid fa-user-plus" style="font-size: 30px;"></i>
+                    <h2 class="animate-slide-down">Welcome Back!</h2>
+                    <p class="text-muted animate-slide-down">Please sign in to your account</p>
+                </div>
+    
+                <!-- Login Form -->
+                <form id="loginForm">
+                    <div class="mb-4 animate-slide-right">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </span>
+                            <input type="email" name="userName" [(ngModel)]="loginobj.userName" class="form-control" placeholder="Email address" required>
+                        </div>
+                    </div>
+    
+                    <div class="mb-4 animate-slide-right" style="animation-delay: 0.2s">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" name="password" [(ngModel)]="loginobj.password" placeholder="Password" required>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-4 animate-fade-in" style="animation-delay: 0.3s">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="text-primary text-decoration-none">Forgot password?</a>
+                    </div>
+    
+                    <button type="button" class="btn btn-primary w-100 mb-4 animate-fade-in" style="animation-delay: 0.4s" (click)="onLogin()">
+
+                        <span class="login-text">
+                            <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                        </span>
+                        <span class="loading-text d-none">
+                            <span class="spinner-border spinner-border-sm me-2"></span>
+                            Signing in...
+                        </span>
+                    </button>
+    
+                    <div class="text-center mb-4 animate-fade-in" style="animation-delay: 0.5s">
+                        <p class="text-muted">Or sign in with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="btn btn-outline-dark me-2">
+                                <i class="fab fa-google"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark">
+                                <i class="fab fa-github"></i>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <p class="text-center mb-0 animate-fade-in" style="animation-delay: 0.6s">
+                        Don't have an account? <a href="#" class="text-primary text-decoration-none">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

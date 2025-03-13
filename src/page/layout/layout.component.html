@@ -1,0 +1,50 @@
+<div class="parent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top animate-slide-down">
+        <div class="container">
+            <a class="navbar-brand animate-fade-in" href="#">
+                <i class="fa-solid fa-user-doctor"></i>
+                DR.SNEHA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active animate-slide-down" routerLink="Apointment-list" style="animation-delay: 0.1s" href="#">
+                            Apointment
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate-slide-down" routerLink="new-apointment-list" style="animation-delay: 0.2s" href="#">
+                            new-apointment
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate-slide-down" routerLink="patient-list" style="animation-delay: 0.3s" href="#">
+                           patient-list
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate-slide-down" style="animation-delay: 0.4s" href="#">
+                            <i class="fas fa-envelope me-1"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-lg-3 animate-slide-down" style="animation-delay: 0.5s" href="#">
+                            <i class="fas fa-user-plus me-1"></i> Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- Animated Navbar -->
+ 
+
+    <!-- Main Content -->
+    <div >
+        <router-outlet></router-outlet>
+    </div>
+
